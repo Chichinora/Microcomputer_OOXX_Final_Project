@@ -1,0 +1,2148 @@
+Version 4.0 HI-TECH Software Intermediate Code
+[p mainexit ]
+"14 ./setting_hardaware/setting.h
+[; ;./setting_hardaware/setting.h: 14: void SYSTEM_Initialize(void);
+[v _SYSTEM_Initialize `(v ~T0 @X0 0 ef ]
+"1488 C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 1488:     struct {
+[s S60 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S60 . TRISA0 TRISA1 TRISA2 TRISA3 TRISA4 TRISA5 TRISA6 TRISA7 ]
+"1498
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 1498:     struct {
+[s S61 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S61 . RA0 RA1 RA2 RA3 RA4 RA5 RA6 RA7 ]
+"1487
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 1487: typedef union {
+[u S59 `S60 1 `S61 1 ]
+[n S59 . . . ]
+"1509
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 1509: extern volatile TRISAbits_t TRISAbits __attribute__((address(0xF92)));
+[v _TRISAbits `VS59 ~T0 @X0 0 e@3986 ]
+"977
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 977: extern volatile unsigned char LATA __attribute__((address(0xF89)));
+[v _LATA `Vuc ~T0 @X0 0 e@3977 ]
+"1932
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 1932:     struct {
+[s S72 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S72 . TRISC0 TRISC1 TRISC2 TRISC3 TRISC4 TRISC5 TRISC6 TRISC7 ]
+"1942
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 1942:     struct {
+[s S73 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S73 . RC0 RC1 RC2 RC3 RC4 RC5 RC6 RC7 ]
+"1931
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 1931: typedef union {
+[u S71 `S72 1 `S73 1 ]
+[n S71 . . . ]
+"1953
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 1953: extern volatile TRISCbits_t TRISCbits __attribute__((address(0xF94)));
+[v _TRISCbits `VS71 ~T0 @X0 0 e@3988 ]
+"1201
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 1201: extern volatile unsigned char LATC __attribute__((address(0xF8B)));
+[v _LATC `Vuc ~T0 @X0 0 e@3979 ]
+"2154
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 2154:     struct {
+[s S78 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S78 . TRISD0 TRISD1 TRISD2 TRISD3 TRISD4 TRISD5 TRISD6 TRISD7 ]
+"2164
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 2164:     struct {
+[s S79 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S79 . RD0 RD1 RD2 RD3 RD4 RD5 RD6 RD7 ]
+"2153
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 2153: typedef union {
+[u S77 `S78 1 `S79 1 ]
+[n S77 . . . ]
+"2175
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 2175: extern volatile TRISDbits_t TRISDbits __attribute__((address(0xF95)));
+[v _TRISDbits `VS77 ~T0 @X0 0 e@3989 ]
+"1313
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 1313: extern volatile unsigned char LATD __attribute__((address(0xF8C)));
+[v _LATD `Vuc ~T0 @X0 0 e@3980 ]
+"7 ./setting_hardaware/uart.h
+[; ;./setting_hardaware/uart.h: 7: void UART_Write_Text(char* text);
+[v _UART_Write_Text `(v ~T0 @X0 0 ef1`*uc ]
+"65 C:\Program Files\Microchip\xc8\v2.50\pic\include\c99\stdlib.h
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\c99\stdlib.h: 65:           void exit (int);
+[v _exit `(v ~T0 @X0 0 ef1`i ]
+[t ~ __interrupt . k ]
+[t T41 __interrupt high_priority ]
+"8180 C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 8180: extern volatile __bit RCIF __attribute__((address(0x7CF5)));
+[v _RCIF `Vb ~T0 @X0 0 e@31989 ]
+"33 C:\Program Files\Microchip\xc8\v2.50\pic\include\c99\string.h
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\c99\string.h: 33: char *strcpy (char *restrict, const char *restrict);
+[v _strcpy `(*uc ~T0 @X0 0 ef2`*uc`*Cuc ]
+"5 ./setting_hardaware/uart.h
+[; ;./setting_hardaware/uart.h: 5: char * GetString();
+[v _GetString `(*uc ~T0 @X0 0 e? ]
+"9
+[; ;./setting_hardaware/uart.h: 9: void MyusartRead();
+[v _MyusartRead `(v ~T0 @X0 0 e? ]
+"3588 C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 3588: extern volatile unsigned char RCREG __attribute__((address(0xFAE)));
+[v _RCREG `Vuc ~T0 @X0 0 e@4014 ]
+"2677
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 2677:     struct {
+[s S96 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S96 . TMR1IF TMR2IF CCP1IF SSPIF TXIF RCIF ADIF PSPIF ]
+"2687
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 2687:     struct {
+[s S97 :4 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S97 . . TX1IF RC1IF ]
+"2676
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 2676: typedef union {
+[u S95 `S96 1 `S97 1 ]
+[n S95 . . . ]
+"2693
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 2693: extern volatile PIR1bits_t PIR1bits __attribute__((address(0xF9E)));
+[v _PIR1bits `VS95 ~T0 @X0 0 e@3998 ]
+[v F205 `(v ~T0 @X0 1 tf1`ul ]
+"20 C:\Program Files\Microchip\xc8\v2.50\pic\include\builtins.h
+[v __delay `JF205 ~T0 @X0 0 e ]
+[p i __delay ]
+"54 C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 54: __asm("PORTA equ 0F80h");
+[; <" PORTA equ 0F80h ;# ">
+"273
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 273: __asm("PORTB equ 0F81h");
+[; <" PORTB equ 0F81h ;# ">
+"452
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 452: __asm("PORTC equ 0F82h");
+[; <" PORTC equ 0F82h ;# ">
+"634
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 634: __asm("PORTD equ 0F83h");
+[; <" PORTD equ 0F83h ;# ">
+"776
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 776: __asm("PORTE equ 0F84h");
+[; <" PORTE equ 0F84h ;# ">
+"979
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 979: __asm("LATA equ 0F89h");
+[; <" LATA equ 0F89h ;# ">
+"1091
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 1091: __asm("LATB equ 0F8Ah");
+[; <" LATB equ 0F8Ah ;# ">
+"1203
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 1203: __asm("LATC equ 0F8Bh");
+[; <" LATC equ 0F8Bh ;# ">
+"1315
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 1315: __asm("LATD equ 0F8Ch");
+[; <" LATD equ 0F8Ch ;# ">
+"1427
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 1427: __asm("LATE equ 0F8Dh");
+[; <" LATE equ 0F8Dh ;# ">
+"1479
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 1479: __asm("TRISA equ 0F92h");
+[; <" TRISA equ 0F92h ;# ">
+"1484
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 1484: __asm("DDRA equ 0F92h");
+[; <" DDRA equ 0F92h ;# ">
+"1701
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 1701: __asm("TRISB equ 0F93h");
+[; <" TRISB equ 0F93h ;# ">
+"1706
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 1706: __asm("DDRB equ 0F93h");
+[; <" DDRB equ 0F93h ;# ">
+"1923
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 1923: __asm("TRISC equ 0F94h");
+[; <" TRISC equ 0F94h ;# ">
+"1928
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 1928: __asm("DDRC equ 0F94h");
+[; <" DDRC equ 0F94h ;# ">
+"2145
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 2145: __asm("TRISD equ 0F95h");
+[; <" TRISD equ 0F95h ;# ">
+"2150
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 2150: __asm("DDRD equ 0F95h");
+[; <" DDRD equ 0F95h ;# ">
+"2367
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 2367: __asm("TRISE equ 0F96h");
+[; <" TRISE equ 0F96h ;# ">
+"2372
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 2372: __asm("DDRE equ 0F96h");
+[; <" DDRE equ 0F96h ;# ">
+"2531
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 2531: __asm("OSCTUNE equ 0F9Bh");
+[; <" OSCTUNE equ 0F9Bh ;# ">
+"2596
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 2596: __asm("PIE1 equ 0F9Dh");
+[; <" PIE1 equ 0F9Dh ;# ">
+"2673
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 2673: __asm("PIR1 equ 0F9Eh");
+[; <" PIR1 equ 0F9Eh ;# ">
+"2750
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 2750: __asm("IPR1 equ 0F9Fh");
+[; <" IPR1 equ 0F9Fh ;# ">
+"2827
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 2827: __asm("PIE2 equ 0FA0h");
+[; <" PIE2 equ 0FA0h ;# ">
+"2893
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 2893: __asm("PIR2 equ 0FA1h");
+[; <" PIR2 equ 0FA1h ;# ">
+"2959
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 2959: __asm("IPR2 equ 0FA2h");
+[; <" IPR2 equ 0FA2h ;# ">
+"3025
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 3025: __asm("EECON1 equ 0FA6h");
+[; <" EECON1 equ 0FA6h ;# ">
+"3091
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 3091: __asm("EECON2 equ 0FA7h");
+[; <" EECON2 equ 0FA7h ;# ">
+"3098
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 3098: __asm("EEDATA equ 0FA8h");
+[; <" EEDATA equ 0FA8h ;# ">
+"3105
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 3105: __asm("EEADR equ 0FA9h");
+[; <" EEADR equ 0FA9h ;# ">
+"3112
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 3112: __asm("RCSTA equ 0FABh");
+[; <" RCSTA equ 0FABh ;# ">
+"3117
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 3117: __asm("RCSTA1 equ 0FABh");
+[; <" RCSTA1 equ 0FABh ;# ">
+"3322
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 3322: __asm("TXSTA equ 0FACh");
+[; <" TXSTA equ 0FACh ;# ">
+"3327
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 3327: __asm("TXSTA1 equ 0FACh");
+[; <" TXSTA1 equ 0FACh ;# ">
+"3578
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 3578: __asm("TXREG equ 0FADh");
+[; <" TXREG equ 0FADh ;# ">
+"3583
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 3583: __asm("TXREG1 equ 0FADh");
+[; <" TXREG1 equ 0FADh ;# ">
+"3590
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 3590: __asm("RCREG equ 0FAEh");
+[; <" RCREG equ 0FAEh ;# ">
+"3595
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 3595: __asm("RCREG1 equ 0FAEh");
+[; <" RCREG1 equ 0FAEh ;# ">
+"3602
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 3602: __asm("SPBRG equ 0FAFh");
+[; <" SPBRG equ 0FAFh ;# ">
+"3607
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 3607: __asm("SPBRG1 equ 0FAFh");
+[; <" SPBRG1 equ 0FAFh ;# ">
+"3614
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 3614: __asm("SPBRGH equ 0FB0h");
+[; <" SPBRGH equ 0FB0h ;# ">
+"3621
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 3621: __asm("T3CON equ 0FB1h");
+[; <" T3CON equ 0FB1h ;# ">
+"3733
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 3733: __asm("TMR3 equ 0FB2h");
+[; <" TMR3 equ 0FB2h ;# ">
+"3740
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 3740: __asm("TMR3L equ 0FB2h");
+[; <" TMR3L equ 0FB2h ;# ">
+"3747
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 3747: __asm("TMR3H equ 0FB3h");
+[; <" TMR3H equ 0FB3h ;# ">
+"3754
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 3754: __asm("CMCON equ 0FB4h");
+[; <" CMCON equ 0FB4h ;# ">
+"3844
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 3844: __asm("CVRCON equ 0FB5h");
+[; <" CVRCON equ 0FB5h ;# ">
+"3923
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 3923: __asm("ECCP1AS equ 0FB6h");
+[; <" ECCP1AS equ 0FB6h ;# ">
+"3928
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 3928: __asm("ECCPAS equ 0FB6h");
+[; <" ECCPAS equ 0FB6h ;# ">
+"4085
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 4085: __asm("PWM1CON equ 0FB7h");
+[; <" PWM1CON equ 0FB7h ;# ">
+"4090
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 4090: __asm("ECCP1DEL equ 0FB7h");
+[; <" ECCP1DEL equ 0FB7h ;# ">
+"4223
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 4223: __asm("BAUDCON equ 0FB8h");
+[; <" BAUDCON equ 0FB8h ;# ">
+"4228
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 4228: __asm("BAUDCTL equ 0FB8h");
+[; <" BAUDCTL equ 0FB8h ;# ">
+"4403
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 4403: __asm("CCP2CON equ 0FBAh");
+[; <" CCP2CON equ 0FBAh ;# ">
+"4482
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 4482: __asm("CCPR2 equ 0FBBh");
+[; <" CCPR2 equ 0FBBh ;# ">
+"4489
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 4489: __asm("CCPR2L equ 0FBBh");
+[; <" CCPR2L equ 0FBBh ;# ">
+"4496
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 4496: __asm("CCPR2H equ 0FBCh");
+[; <" CCPR2H equ 0FBCh ;# ">
+"4503
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 4503: __asm("CCP1CON equ 0FBDh");
+[; <" CCP1CON equ 0FBDh ;# ">
+"4600
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 4600: __asm("CCPR1 equ 0FBEh");
+[; <" CCPR1 equ 0FBEh ;# ">
+"4607
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 4607: __asm("CCPR1L equ 0FBEh");
+[; <" CCPR1L equ 0FBEh ;# ">
+"4614
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 4614: __asm("CCPR1H equ 0FBFh");
+[; <" CCPR1H equ 0FBFh ;# ">
+"4621
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 4621: __asm("ADCON2 equ 0FC0h");
+[; <" ADCON2 equ 0FC0h ;# ">
+"4692
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 4692: __asm("ADCON1 equ 0FC1h");
+[; <" ADCON1 equ 0FC1h ;# ">
+"4777
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 4777: __asm("ADCON0 equ 0FC2h");
+[; <" ADCON0 equ 0FC2h ;# ">
+"4896
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 4896: __asm("ADRES equ 0FC3h");
+[; <" ADRES equ 0FC3h ;# ">
+"4903
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 4903: __asm("ADRESL equ 0FC3h");
+[; <" ADRESL equ 0FC3h ;# ">
+"4910
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 4910: __asm("ADRESH equ 0FC4h");
+[; <" ADRESH equ 0FC4h ;# ">
+"4917
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 4917: __asm("SSPCON2 equ 0FC5h");
+[; <" SSPCON2 equ 0FC5h ;# ">
+"5012
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 5012: __asm("SSPCON1 equ 0FC6h");
+[; <" SSPCON1 equ 0FC6h ;# ">
+"5082
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 5082: __asm("SSPSTAT equ 0FC7h");
+[; <" SSPSTAT equ 0FC7h ;# ">
+"5303
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 5303: __asm("SSPADD equ 0FC8h");
+[; <" SSPADD equ 0FC8h ;# ">
+"5310
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 5310: __asm("SSPBUF equ 0FC9h");
+[; <" SSPBUF equ 0FC9h ;# ">
+"5317
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 5317: __asm("T2CON equ 0FCAh");
+[; <" T2CON equ 0FCAh ;# ">
+"5415
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 5415: __asm("PR2 equ 0FCBh");
+[; <" PR2 equ 0FCBh ;# ">
+"5420
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 5420: __asm("MEMCON equ 0FCBh");
+[; <" MEMCON equ 0FCBh ;# ">
+"5525
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 5525: __asm("TMR2 equ 0FCCh");
+[; <" TMR2 equ 0FCCh ;# ">
+"5532
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 5532: __asm("T1CON equ 0FCDh");
+[; <" T1CON equ 0FCDh ;# ">
+"5635
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 5635: __asm("TMR1 equ 0FCEh");
+[; <" TMR1 equ 0FCEh ;# ">
+"5642
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 5642: __asm("TMR1L equ 0FCEh");
+[; <" TMR1L equ 0FCEh ;# ">
+"5649
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 5649: __asm("TMR1H equ 0FCFh");
+[; <" TMR1H equ 0FCFh ;# ">
+"5656
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 5656: __asm("RCON equ 0FD0h");
+[; <" RCON equ 0FD0h ;# ">
+"5789
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 5789: __asm("WDTCON equ 0FD1h");
+[; <" WDTCON equ 0FD1h ;# ">
+"5817
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 5817: __asm("HLVDCON equ 0FD2h");
+[; <" HLVDCON equ 0FD2h ;# ">
+"5822
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 5822: __asm("LVDCON equ 0FD2h");
+[; <" LVDCON equ 0FD2h ;# ">
+"6087
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 6087: __asm("OSCCON equ 0FD3h");
+[; <" OSCCON equ 0FD3h ;# ">
+"6170
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 6170: __asm("T0CON equ 0FD5h");
+[; <" T0CON equ 0FD5h ;# ">
+"6253
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 6253: __asm("TMR0 equ 0FD6h");
+[; <" TMR0 equ 0FD6h ;# ">
+"6260
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 6260: __asm("TMR0L equ 0FD6h");
+[; <" TMR0L equ 0FD6h ;# ">
+"6267
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 6267: __asm("TMR0H equ 0FD7h");
+[; <" TMR0H equ 0FD7h ;# ">
+"6274
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 6274: __asm("STATUS equ 0FD8h");
+[; <" STATUS equ 0FD8h ;# ">
+"6345
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 6345: __asm("FSR2 equ 0FD9h");
+[; <" FSR2 equ 0FD9h ;# ">
+"6352
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 6352: __asm("FSR2L equ 0FD9h");
+[; <" FSR2L equ 0FD9h ;# ">
+"6359
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 6359: __asm("FSR2H equ 0FDAh");
+[; <" FSR2H equ 0FDAh ;# ">
+"6366
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 6366: __asm("PLUSW2 equ 0FDBh");
+[; <" PLUSW2 equ 0FDBh ;# ">
+"6373
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 6373: __asm("PREINC2 equ 0FDCh");
+[; <" PREINC2 equ 0FDCh ;# ">
+"6380
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 6380: __asm("POSTDEC2 equ 0FDDh");
+[; <" POSTDEC2 equ 0FDDh ;# ">
+"6387
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 6387: __asm("POSTINC2 equ 0FDEh");
+[; <" POSTINC2 equ 0FDEh ;# ">
+"6394
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 6394: __asm("INDF2 equ 0FDFh");
+[; <" INDF2 equ 0FDFh ;# ">
+"6401
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 6401: __asm("BSR equ 0FE0h");
+[; <" BSR equ 0FE0h ;# ">
+"6408
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 6408: __asm("FSR1 equ 0FE1h");
+[; <" FSR1 equ 0FE1h ;# ">
+"6415
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 6415: __asm("FSR1L equ 0FE1h");
+[; <" FSR1L equ 0FE1h ;# ">
+"6422
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 6422: __asm("FSR1H equ 0FE2h");
+[; <" FSR1H equ 0FE2h ;# ">
+"6429
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 6429: __asm("PLUSW1 equ 0FE3h");
+[; <" PLUSW1 equ 0FE3h ;# ">
+"6436
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 6436: __asm("PREINC1 equ 0FE4h");
+[; <" PREINC1 equ 0FE4h ;# ">
+"6443
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 6443: __asm("POSTDEC1 equ 0FE5h");
+[; <" POSTDEC1 equ 0FE5h ;# ">
+"6450
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 6450: __asm("POSTINC1 equ 0FE6h");
+[; <" POSTINC1 equ 0FE6h ;# ">
+"6457
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 6457: __asm("INDF1 equ 0FE7h");
+[; <" INDF1 equ 0FE7h ;# ">
+"6464
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 6464: __asm("WREG equ 0FE8h");
+[; <" WREG equ 0FE8h ;# ">
+"6476
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 6476: __asm("FSR0 equ 0FE9h");
+[; <" FSR0 equ 0FE9h ;# ">
+"6483
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 6483: __asm("FSR0L equ 0FE9h");
+[; <" FSR0L equ 0FE9h ;# ">
+"6490
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 6490: __asm("FSR0H equ 0FEAh");
+[; <" FSR0H equ 0FEAh ;# ">
+"6497
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 6497: __asm("PLUSW0 equ 0FEBh");
+[; <" PLUSW0 equ 0FEBh ;# ">
+"6504
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 6504: __asm("PREINC0 equ 0FECh");
+[; <" PREINC0 equ 0FECh ;# ">
+"6511
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 6511: __asm("POSTDEC0 equ 0FEDh");
+[; <" POSTDEC0 equ 0FEDh ;# ">
+"6518
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 6518: __asm("POSTINC0 equ 0FEEh");
+[; <" POSTINC0 equ 0FEEh ;# ">
+"6525
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 6525: __asm("INDF0 equ 0FEFh");
+[; <" INDF0 equ 0FEFh ;# ">
+"6532
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 6532: __asm("INTCON3 equ 0FF0h");
+[; <" INTCON3 equ 0FF0h ;# ">
+"6624
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 6624: __asm("INTCON2 equ 0FF1h");
+[; <" INTCON2 equ 0FF1h ;# ">
+"6694
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 6694: __asm("INTCON equ 0FF2h");
+[; <" INTCON equ 0FF2h ;# ">
+"6811
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 6811: __asm("PROD equ 0FF3h");
+[; <" PROD equ 0FF3h ;# ">
+"6818
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 6818: __asm("PRODL equ 0FF3h");
+[; <" PRODL equ 0FF3h ;# ">
+"6825
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 6825: __asm("PRODH equ 0FF4h");
+[; <" PRODH equ 0FF4h ;# ">
+"6832
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 6832: __asm("TABLAT equ 0FF5h");
+[; <" TABLAT equ 0FF5h ;# ">
+"6841
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 6841: __asm("TBLPTR equ 0FF6h");
+[; <" TBLPTR equ 0FF6h ;# ">
+"6848
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 6848: __asm("TBLPTRL equ 0FF6h");
+[; <" TBLPTRL equ 0FF6h ;# ">
+"6855
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 6855: __asm("TBLPTRH equ 0FF7h");
+[; <" TBLPTRH equ 0FF7h ;# ">
+"6862
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 6862: __asm("TBLPTRU equ 0FF8h");
+[; <" TBLPTRU equ 0FF8h ;# ">
+"6871
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 6871: __asm("PCLAT equ 0FF9h");
+[; <" PCLAT equ 0FF9h ;# ">
+"6878
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 6878: __asm("PC equ 0FF9h");
+[; <" PC equ 0FF9h ;# ">
+"6885
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 6885: __asm("PCL equ 0FF9h");
+[; <" PCL equ 0FF9h ;# ">
+"6892
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 6892: __asm("PCLATH equ 0FFAh");
+[; <" PCLATH equ 0FFAh ;# ">
+"6899
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 6899: __asm("PCLATU equ 0FFBh");
+[; <" PCLATU equ 0FFBh ;# ">
+"6906
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 6906: __asm("STKPTR equ 0FFCh");
+[; <" STKPTR equ 0FFCh ;# ">
+"6980
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 6980: __asm("TOS equ 0FFDh");
+[; <" TOS equ 0FFDh ;# ">
+"6987
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 6987: __asm("TOSL equ 0FFDh");
+[; <" TOSL equ 0FFDh ;# ">
+"6994
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 6994: __asm("TOSH equ 0FFEh");
+[; <" TOSH equ 0FFEh ;# ">
+"7001
+[; ;C:\Program Files\Microchip\xc8\v2.50\pic\include\proc\pic18f4520.h: 7001: __asm("TOSU equ 0FFFh");
+[; <" TOSU equ 0FFFh ;# ">
+"15 main.c
+[; ;main.c: 15: int player_a[3] = {0}, player_b[3] = {0};
+[v _player_a `i ~T0 @X0 -> 3 `i e ]
+[i _player_a
+:U ..
+-> 0 `i
+..
+]
+[v _player_b `i ~T0 @X0 -> 3 `i e ]
+[i _player_b
+:U ..
+-> 0 `i
+..
+]
+"16
+[; ;main.c: 16: int turn = 0;
+[v _turn `i ~T0 @X0 1 e ]
+[i _turn
+-> 0 `i
+]
+"17
+[; ;main.c: 17: char str[20];
+[v _str `uc ~T0 @X0 -> 20 `i e ]
+"18
+[; ;main.c: 18: int temp = 0;
+[v _temp `i ~T0 @X0 1 e ]
+[i _temp
+-> 0 `i
+]
+"19
+[; ;main.c: 19: int JUDGE(int turn, int player[3]){
+[v _JUDGE `(i ~T0 @X0 1 ef2`i`*i ]
+{
+[e :U _JUDGE ]
+[v _turn `i ~T0 @X0 1 r1 ]
+[v _player `*i ~T0 @X0 1 r2 ]
+[f ]
+"20
+[; ;main.c: 20:     int arr[3];
+[v _arr `i ~T0 @X0 -> 3 `i a ]
+"21
+[; ;main.c: 21:     arr[0] = player[0];
+[e = *U + &U _arr * -> -> -> 0 `i `ui `ux -> -> # *U &U _arr `ui `ux *U + _player * -> -> 0 `i `x -> -> # *U _player `i `x ]
+"22
+[; ;main.c: 22:     arr[1] = player[1];
+[e = *U + &U _arr * -> -> -> 1 `i `ui `ux -> -> # *U &U _arr `ui `ux *U + _player * -> -> 1 `i `x -> -> # *U _player `i `x ]
+"23
+[; ;main.c: 23:     arr[2] = player[2];
+[e = *U + &U _arr * -> -> -> 2 `i `ui `ux -> -> # *U &U _arr `ui `ux *U + _player * -> -> 2 `i `x -> -> # *U _player `i `x ]
+"25
+[; ;main.c: 25:     for (int i = 0; i < 3; ++i) {
+{
+[v _i `i ~T0 @X0 1 a ]
+[e = _i -> 0 `i ]
+[e $ < _i -> 3 `i 285  ]
+[e $U 286  ]
+[e :U 285 ]
+{
+"26
+[; ;main.c: 26:         for (int j = 0; j < i; ++j) {
+{
+[v _j `i ~T0 @X0 1 a ]
+[e = _j -> 0 `i ]
+[e $U 291  ]
+[e :U 288 ]
+{
+"27
+[; ;main.c: 27:             if (arr[j] > arr[i]) {
+[e $ ! > *U + &U _arr * -> -> _j `ui `ux -> -> # *U &U _arr `ui `ux *U + &U _arr * -> -> _i `ui `ux -> -> # *U &U _arr `ui `ux 292  ]
+{
+"28
+[; ;main.c: 28:                 int x = arr[j];
+[v _x `i ~T0 @X0 1 a ]
+[e = _x *U + &U _arr * -> -> _j `ui `ux -> -> # *U &U _arr `ui `ux ]
+"29
+[; ;main.c: 29:                     arr[j] = arr[i];
+[e = *U + &U _arr * -> -> _j `ui `ux -> -> # *U &U _arr `ui `ux *U + &U _arr * -> -> _i `ui `ux -> -> # *U &U _arr `ui `ux ]
+"30
+[; ;main.c: 30:                     arr[i] = x;
+[e = *U + &U _arr * -> -> _i `ui `ux -> -> # *U &U _arr `ui `ux _x ]
+"31
+[; ;main.c: 31:             }
+}
+[e :U 292 ]
+"32
+[; ;main.c: 32:         }
+}
+[e =+ _j -> 1 `i ]
+[e :U 291 ]
+[e $ < _j _i 288  ]
+[e :U 289 ]
+}
+"33
+[; ;main.c: 33:     }
+}
+[e =+ _i -> 1 `i ]
+[e $ < _i -> 3 `i 285  ]
+[e :U 286 ]
+}
+"34
+[; ;main.c: 34:     int a = 0;
+[v _a `i ~T0 @X0 1 a ]
+[e = _a -> 0 `i ]
+"35
+[; ;main.c: 35:     _Bool win = 0;
+[v _win `a ~T0 @X0 1 a ]
+[e = _win -> -> 0 `i `a ]
+"36
+[; ;main.c: 36:     if (arr[0]==1 && arr[1]==2 && arr[2]==3) win = 1;
+[e $ ! && && == *U + &U _arr * -> -> -> 0 `i `ui `ux -> -> # *U &U _arr `ui `ux -> 1 `i == *U + &U _arr * -> -> -> 1 `i `ui `ux -> -> # *U &U _arr `ui `ux -> 2 `i == *U + &U _arr * -> -> -> 2 `i `ui `ux -> -> # *U &U _arr `ui `ux -> 3 `i 293  ]
+[e = _win -> -> 1 `i `a ]
+[e $U 294  ]
+"37
+[; ;main.c: 37:     else if (arr[0]==4 && arr[1]==5 && arr[2]==6) win = 1;
+[e :U 293 ]
+[e $ ! && && == *U + &U _arr * -> -> -> 0 `i `ui `ux -> -> # *U &U _arr `ui `ux -> 4 `i == *U + &U _arr * -> -> -> 1 `i `ui `ux -> -> # *U &U _arr `ui `ux -> 5 `i == *U + &U _arr * -> -> -> 2 `i `ui `ux -> -> # *U &U _arr `ui `ux -> 6 `i 295  ]
+[e = _win -> -> 1 `i `a ]
+[e $U 296  ]
+"38
+[; ;main.c: 38:     else if (arr[0]==7 && arr[1]==8 && arr[2]==9) win = 1;
+[e :U 295 ]
+[e $ ! && && == *U + &U _arr * -> -> -> 0 `i `ui `ux -> -> # *U &U _arr `ui `ux -> 7 `i == *U + &U _arr * -> -> -> 1 `i `ui `ux -> -> # *U &U _arr `ui `ux -> 8 `i == *U + &U _arr * -> -> -> 2 `i `ui `ux -> -> # *U &U _arr `ui `ux -> 9 `i 297  ]
+[e = _win -> -> 1 `i `a ]
+[e $U 298  ]
+"39
+[; ;main.c: 39:     else if (arr[0]==1 && arr[1]==4 && arr[2]==7) win = 1;
+[e :U 297 ]
+[e $ ! && && == *U + &U _arr * -> -> -> 0 `i `ui `ux -> -> # *U &U _arr `ui `ux -> 1 `i == *U + &U _arr * -> -> -> 1 `i `ui `ux -> -> # *U &U _arr `ui `ux -> 4 `i == *U + &U _arr * -> -> -> 2 `i `ui `ux -> -> # *U &U _arr `ui `ux -> 7 `i 299  ]
+[e = _win -> -> 1 `i `a ]
+[e $U 300  ]
+"40
+[; ;main.c: 40:     else if (arr[0]==2 && arr[1]==5 && arr[2]==8) win = 1;
+[e :U 299 ]
+[e $ ! && && == *U + &U _arr * -> -> -> 0 `i `ui `ux -> -> # *U &U _arr `ui `ux -> 2 `i == *U + &U _arr * -> -> -> 1 `i `ui `ux -> -> # *U &U _arr `ui `ux -> 5 `i == *U + &U _arr * -> -> -> 2 `i `ui `ux -> -> # *U &U _arr `ui `ux -> 8 `i 301  ]
+[e = _win -> -> 1 `i `a ]
+[e $U 302  ]
+"41
+[; ;main.c: 41:     else if (arr[0]==3 && arr[1]==6 && arr[2]==9) win = 1;
+[e :U 301 ]
+[e $ ! && && == *U + &U _arr * -> -> -> 0 `i `ui `ux -> -> # *U &U _arr `ui `ux -> 3 `i == *U + &U _arr * -> -> -> 1 `i `ui `ux -> -> # *U &U _arr `ui `ux -> 6 `i == *U + &U _arr * -> -> -> 2 `i `ui `ux -> -> # *U &U _arr `ui `ux -> 9 `i 303  ]
+[e = _win -> -> 1 `i `a ]
+[e $U 304  ]
+"42
+[; ;main.c: 42:     else if (arr[0]==1 && arr[1]==5 && arr[2]==9) win = 1;
+[e :U 303 ]
+[e $ ! && && == *U + &U _arr * -> -> -> 0 `i `ui `ux -> -> # *U &U _arr `ui `ux -> 1 `i == *U + &U _arr * -> -> -> 1 `i `ui `ux -> -> # *U &U _arr `ui `ux -> 5 `i == *U + &U _arr * -> -> -> 2 `i `ui `ux -> -> # *U &U _arr `ui `ux -> 9 `i 305  ]
+[e = _win -> -> 1 `i `a ]
+[e $U 306  ]
+"43
+[; ;main.c: 43:     else if (arr[0]==3 && arr[1]==5 && arr[2]==7) win = 1;
+[e :U 305 ]
+[e $ ! && && == *U + &U _arr * -> -> -> 0 `i `ui `ux -> -> # *U &U _arr `ui `ux -> 3 `i == *U + &U _arr * -> -> -> 1 `i `ui `ux -> -> # *U &U _arr `ui `ux -> 5 `i == *U + &U _arr * -> -> -> 2 `i `ui `ux -> -> # *U &U _arr `ui `ux -> 7 `i 307  ]
+[e = _win -> -> 1 `i `a ]
+[e :U 307 ]
+[e :U 306 ]
+[e :U 304 ]
+[e :U 302 ]
+[e :U 300 ]
+[e :U 298 ]
+[e :U 296 ]
+[e :U 294 ]
+"44
+[; ;main.c: 44:     if (win == 1){
+[e $ ! == -> _win `i -> 1 `i 308  ]
+{
+"45
+[; ;main.c: 45:         if (turn == 0) a = 1;
+[e $ ! == _turn -> 0 `i 309  ]
+[e = _a -> 1 `i ]
+[e $U 310  ]
+"46
+[; ;main.c: 46:         else if (turn == 1) a = 2;
+[e :U 309 ]
+[e $ ! == _turn -> 1 `i 311  ]
+[e = _a -> 2 `i ]
+[e :U 311 ]
+[e :U 310 ]
+"47
+[; ;main.c: 47:     }
+}
+[e $U 312  ]
+"48
+[; ;main.c: 48:     else if (win == 0) a = 0;
+[e :U 308 ]
+[e $ ! == -> _win `i -> 0 `i 313  ]
+[e = _a -> 0 `i ]
+[e :U 313 ]
+[e :U 312 ]
+"49
+[; ;main.c: 49:     return a;
+[e ) _a ]
+[e $UE 284  ]
+"50
+[; ;main.c: 50: }
+[e :UE 284 ]
+}
+"51
+[; ;main.c: 51: void Mode2(){
+[v _Mode2 `(v ~T0 @X0 1 ef ]
+{
+[e :U _Mode2 ]
+[f ]
+"52
+[; ;main.c: 52:     return ;
+[e $UE 314  ]
+"53
+[; ;main.c: 53: }
+[e :UE 314 ]
+}
+[v $root$_main `(v ~T0 @X0 0 e ]
+"54
+[; ;main.c: 54: void main(void)
+[v _main `(v ~T0 @X0 1 ef ]
+"55
+[; ;main.c: 55: {
+{
+[e :U _main ]
+[f ]
+"57
+[; ;main.c: 57:     SYSTEM_Initialize() ;
+[e ( _SYSTEM_Initialize ..  ]
+"58
+[; ;main.c: 58:     TRISAbits.RA0 = 0;
+[e = . . _TRISAbits 1 0 -> -> 0 `i `uc ]
+"59
+[; ;main.c: 59:     TRISAbits.RA1 = 0;
+[e = . . _TRISAbits 1 1 -> -> 0 `i `uc ]
+"60
+[; ;main.c: 60:     TRISAbits.RA2 = 0;
+[e = . . _TRISAbits 1 2 -> -> 0 `i `uc ]
+"61
+[; ;main.c: 61:     LATA = 0;
+[e = _LATA -> -> 0 `i `uc ]
+"62
+[; ;main.c: 62:     TRISCbits.RC0 = 0;
+[e = . . _TRISCbits 1 0 -> -> 0 `i `uc ]
+"63
+[; ;main.c: 63:     TRISCbits.RC1 = 0;
+[e = . . _TRISCbits 1 1 -> -> 0 `i `uc ]
+"64
+[; ;main.c: 64:     TRISCbits.RC2 = 0;
+[e = . . _TRISCbits 1 2 -> -> 0 `i `uc ]
+"65
+[; ;main.c: 65:     LATC = 0;
+[e = _LATC -> -> 0 `i `uc ]
+"66
+[; ;main.c: 66:     TRISDbits.RD0 = 0;
+[e = . . _TRISDbits 1 0 -> -> 0 `i `uc ]
+"67
+[; ;main.c: 67:     TRISDbits.RD1 = 0;
+[e = . . _TRISDbits 1 1 -> -> 0 `i `uc ]
+"68
+[; ;main.c: 68:     TRISDbits.RD2 = 0;
+[e = . . _TRISDbits 1 2 -> -> 0 `i `uc ]
+"69
+[; ;main.c: 69:     LATD = 0;
+[e = _LATD -> -> 0 `i `uc ]
+"70
+[; ;main.c: 70:     if (temp == 0) UART_Write_Text("Player 1 input:");
+[e $ ! == _temp -> 0 `i 316  ]
+[e ( _UART_Write_Text (1 :s 1C ]
+[e :U 316 ]
+"71
+[; ;main.c: 71:     while(1) {
+[e :U 318 ]
+{
+"72
+[; ;main.c: 72:         if(temp != 0){
+[e $ ! != _temp -> 0 `i 320  ]
+{
+"73
+[; ;main.c: 73:             exit(0);
+[e ( _exit (1 -> 0 `i ]
+"74
+[; ;main.c: 74:         }
+}
+[e :U 320 ]
+"75
+[; ;main.c: 75:     }
+}
+[e :U 317 ]
+[e $U 318  ]
+[e :U 319 ]
+"76
+[; ;main.c: 76:     return;
+[e $UE 315  ]
+"77
+[; ;main.c: 77: }
+[e :UE 315 ]
+}
+[v $root$_Hi_ISR `(v ~T0 @X0 0 e ]
+"79
+[; ;main.c: 79: void __attribute__((picinterrupt(("high_priority")))) Hi_ISR(void)
+[v _Hi_ISR `(v ~T41 @X0 1 ef ]
+"80
+[; ;main.c: 80: {
+{
+[e :U _Hi_ISR ]
+[f ]
+"81
+[; ;main.c: 81:     if (RCIF){
+[e $ ! _RCIF 322  ]
+{
+"82
+[; ;main.c: 82:         strcpy(str, GetString());
+[e ( _strcpy (2 , &U _str -> ( _GetString ..  `*Cuc ]
+"83
+[; ;main.c: 83:         MyusartRead();
+[e ( _MyusartRead ..  ]
+"84
+[; ;main.c: 84:         char ch = RCREG;
+[v _ch `uc ~T0 @X0 1 a ]
+[e = _ch -> _RCREG `uc ]
+"85
+[; ;main.c: 85:         if (ch == '\r'){
+[e $ ! == -> _ch `ui -> 13 `ui 323  ]
+{
+"86
+[; ;main.c: 86:             int position = ((int)str[0])-48;
+[v _position `i ~T0 @X0 1 a ]
+[e = _position - -> *U + &U _str * -> -> -> 0 `i `ui `ux -> -> # *U &U _str `ui `ux `i -> 48 `i ]
+"88
+[; ;main.c: 88:             if (turn == 0){
+[e $ ! == _turn -> 0 `i 324  ]
+{
+"89
+[; ;main.c: 89:                 if (player_a[2] != 0){
+[e $ ! != *U + &U _player_a * -> -> -> 2 `i `ui `ux -> -> # *U &U _player_a `ui `ux -> 0 `i 325  ]
+{
+"90
+[; ;main.c: 90:                     switch(player_a[0]){
+[e $U 327  ]
+{
+"91
+[; ;main.c: 91:                         case 1:
+[e :U 328 ]
+"92
+[; ;main.c: 92:                             LATD = LATD & 254;
+[e = _LATD -> & -> _LATD `i -> 254 `i `uc ]
+"93
+[; ;main.c: 93:                             break;
+[e $U 326  ]
+"94
+[; ;main.c: 94:                         case 2:
+[e :U 329 ]
+"95
+[; ;main.c: 95:                             LATD = LATD & 253;
+[e = _LATD -> & -> _LATD `i -> 253 `i `uc ]
+"96
+[; ;main.c: 96:                             break;
+[e $U 326  ]
+"97
+[; ;main.c: 97:                         case 3:
+[e :U 330 ]
+"98
+[; ;main.c: 98:                             LATD = LATD & 251;
+[e = _LATD -> & -> _LATD `i -> 251 `i `uc ]
+"99
+[; ;main.c: 99:                             break;
+[e $U 326  ]
+"100
+[; ;main.c: 100:                         case 4:
+[e :U 331 ]
+"101
+[; ;main.c: 101:                             LATC = LATC & 254;
+[e = _LATC -> & -> _LATC `i -> 254 `i `uc ]
+"102
+[; ;main.c: 102:                             break;
+[e $U 326  ]
+"103
+[; ;main.c: 103:                         case 5:
+[e :U 332 ]
+"104
+[; ;main.c: 104:                             LATC = LATC & 253;
+[e = _LATC -> & -> _LATC `i -> 253 `i `uc ]
+"105
+[; ;main.c: 105:                             break;
+[e $U 326  ]
+"106
+[; ;main.c: 106:                         case 6:
+[e :U 333 ]
+"107
+[; ;main.c: 107:                             LATC = LATC & 251;
+[e = _LATC -> & -> _LATC `i -> 251 `i `uc ]
+"108
+[; ;main.c: 108:                             break;
+[e $U 326  ]
+"109
+[; ;main.c: 109:                         case 7:
+[e :U 334 ]
+"110
+[; ;main.c: 110:                             LATA = LATA & 254;
+[e = _LATA -> & -> _LATA `i -> 254 `i `uc ]
+"111
+[; ;main.c: 111:                             break;
+[e $U 326  ]
+"112
+[; ;main.c: 112:                         case 8:
+[e :U 335 ]
+"113
+[; ;main.c: 113:                             LATA = LATA & 253;
+[e = _LATA -> & -> _LATA `i -> 253 `i `uc ]
+"114
+[; ;main.c: 114:                             break;
+[e $U 326  ]
+"115
+[; ;main.c: 115:                         case 9:
+[e :U 336 ]
+"116
+[; ;main.c: 116:                             LATA = LATA & 251;
+[e = _LATA -> & -> _LATA `i -> 251 `i `uc ]
+"117
+[; ;main.c: 117:                             break;
+[e $U 326  ]
+"118
+[; ;main.c: 118:                     }
+}
+[e $U 326  ]
+[e :U 327 ]
+[e [\ *U + &U _player_a * -> -> -> 0 `i `ui `ux -> -> # *U &U _player_a `ui `ux , $ -> 1 `i 328
+ , $ -> 2 `i 329
+ , $ -> 3 `i 330
+ , $ -> 4 `i 331
+ , $ -> 5 `i 332
+ , $ -> 6 `i 333
+ , $ -> 7 `i 334
+ , $ -> 8 `i 335
+ , $ -> 9 `i 336
+ 326 ]
+[e :U 326 ]
+"119
+[; ;main.c: 119:                     player_a[0] = player_a[1];
+[e = *U + &U _player_a * -> -> -> 0 `i `ui `ux -> -> # *U &U _player_a `ui `ux *U + &U _player_a * -> -> -> 1 `i `ui `ux -> -> # *U &U _player_a `ui `ux ]
+"120
+[; ;main.c: 120:                     player_a[1] = player_a[2];
+[e = *U + &U _player_a * -> -> -> 1 `i `ui `ux -> -> # *U &U _player_a `ui `ux *U + &U _player_a * -> -> -> 2 `i `ui `ux -> -> # *U &U _player_a `ui `ux ]
+"121
+[; ;main.c: 121:                     player_a[2] = position;
+[e = *U + &U _player_a * -> -> -> 2 `i `ui `ux -> -> # *U &U _player_a `ui `ux _position ]
+"123
+[; ;main.c: 123:                 }
+}
+[e $U 337  ]
+"124
+[; ;main.c: 124:                 else {
+[e :U 325 ]
+{
+"125
+[; ;main.c: 125:                     if (player_a[0] == 0) player_a[0] = position;
+[e $ ! == *U + &U _player_a * -> -> -> 0 `i `ui `ux -> -> # *U &U _player_a `ui `ux -> 0 `i 338  ]
+[e = *U + &U _player_a * -> -> -> 0 `i `ui `ux -> -> # *U &U _player_a `ui `ux _position ]
+[e $U 339  ]
+"126
+[; ;main.c: 126:                     else if (player_a[1] == 0) player_a[1] = position;
+[e :U 338 ]
+[e $ ! == *U + &U _player_a * -> -> -> 1 `i `ui `ux -> -> # *U &U _player_a `ui `ux -> 0 `i 340  ]
+[e = *U + &U _player_a * -> -> -> 1 `i `ui `ux -> -> # *U &U _player_a `ui `ux _position ]
+[e $U 341  ]
+"127
+[; ;main.c: 127:                     else if (player_a[2] == 0) player_a[2] = position;
+[e :U 340 ]
+[e $ ! == *U + &U _player_a * -> -> -> 2 `i `ui `ux -> -> # *U &U _player_a `ui `ux -> 0 `i 342  ]
+[e = *U + &U _player_a * -> -> -> 2 `i `ui `ux -> -> # *U &U _player_a `ui `ux _position ]
+[e :U 342 ]
+[e :U 341 ]
+[e :U 339 ]
+"128
+[; ;main.c: 128:                 }
+}
+[e :U 337 ]
+"129
+[; ;main.c: 129:                 switch(player_a[0]){
+[e $U 344  ]
+{
+"130
+[; ;main.c: 130:                         case 1:
+[e :U 345 ]
+"131
+[; ;main.c: 131:                             LATD = LATD | 1;
+[e = _LATD -> | -> _LATD `i -> 1 `i `uc ]
+"132
+[; ;main.c: 132:                             break;
+[e $U 343  ]
+"133
+[; ;main.c: 133:                         case 2:
+[e :U 346 ]
+"134
+[; ;main.c: 134:                             LATD = LATD | 2;
+[e = _LATD -> | -> _LATD `i -> 2 `i `uc ]
+"135
+[; ;main.c: 135:                             break;
+[e $U 343  ]
+"136
+[; ;main.c: 136:                         case 3:
+[e :U 347 ]
+"137
+[; ;main.c: 137:                             LATD = LATD | 4;
+[e = _LATD -> | -> _LATD `i -> 4 `i `uc ]
+"138
+[; ;main.c: 138:                             break;
+[e $U 343  ]
+"139
+[; ;main.c: 139:                         case 4:
+[e :U 348 ]
+"140
+[; ;main.c: 140:                             LATC = LATC | 1;
+[e = _LATC -> | -> _LATC `i -> 1 `i `uc ]
+"141
+[; ;main.c: 141:                             break;
+[e $U 343  ]
+"142
+[; ;main.c: 142:                         case 5:
+[e :U 349 ]
+"143
+[; ;main.c: 143:                             LATC = LATC | 2;
+[e = _LATC -> | -> _LATC `i -> 2 `i `uc ]
+"144
+[; ;main.c: 144:                             break;
+[e $U 343  ]
+"145
+[; ;main.c: 145:                         case 6:
+[e :U 350 ]
+"146
+[; ;main.c: 146:                             LATC = LATC | 4;
+[e = _LATC -> | -> _LATC `i -> 4 `i `uc ]
+"147
+[; ;main.c: 147:                             break;
+[e $U 343  ]
+"148
+[; ;main.c: 148:                         case 7:
+[e :U 351 ]
+"149
+[; ;main.c: 149:                             LATA = LATA | 1;
+[e = _LATA -> | -> _LATA `i -> 1 `i `uc ]
+"150
+[; ;main.c: 150:                             break;
+[e $U 343  ]
+"151
+[; ;main.c: 151:                         case 8:
+[e :U 352 ]
+"152
+[; ;main.c: 152:                             LATA = LATA | 2;
+[e = _LATA -> | -> _LATA `i -> 2 `i `uc ]
+"153
+[; ;main.c: 153:                             break;
+[e $U 343  ]
+"154
+[; ;main.c: 154:                         case 9:
+[e :U 353 ]
+"155
+[; ;main.c: 155:                             LATA = LATA | 4;
+[e = _LATA -> | -> _LATA `i -> 4 `i `uc ]
+"156
+[; ;main.c: 156:                             break;
+[e $U 343  ]
+"157
+[; ;main.c: 157:                     }
+}
+[e $U 343  ]
+[e :U 344 ]
+[e [\ *U + &U _player_a * -> -> -> 0 `i `ui `ux -> -> # *U &U _player_a `ui `ux , $ -> 1 `i 345
+ , $ -> 2 `i 346
+ , $ -> 3 `i 347
+ , $ -> 4 `i 348
+ , $ -> 5 `i 349
+ , $ -> 6 `i 350
+ , $ -> 7 `i 351
+ , $ -> 8 `i 352
+ , $ -> 9 `i 353
+ 343 ]
+[e :U 343 ]
+"158
+[; ;main.c: 158:                 switch(player_a[1]){
+[e $U 355  ]
+{
+"159
+[; ;main.c: 159:                         case 1:
+[e :U 356 ]
+"160
+[; ;main.c: 160:                             LATD = LATD | 1;
+[e = _LATD -> | -> _LATD `i -> 1 `i `uc ]
+"161
+[; ;main.c: 161:                             break;
+[e $U 354  ]
+"162
+[; ;main.c: 162:                         case 2:
+[e :U 357 ]
+"163
+[; ;main.c: 163:                             LATD = LATD | 2;
+[e = _LATD -> | -> _LATD `i -> 2 `i `uc ]
+"164
+[; ;main.c: 164:                             break;
+[e $U 354  ]
+"165
+[; ;main.c: 165:                         case 3:
+[e :U 358 ]
+"166
+[; ;main.c: 166:                             LATD = LATD | 4;
+[e = _LATD -> | -> _LATD `i -> 4 `i `uc ]
+"167
+[; ;main.c: 167:                             break;
+[e $U 354  ]
+"168
+[; ;main.c: 168:                         case 4:
+[e :U 359 ]
+"169
+[; ;main.c: 169:                             LATC = LATC | 1;
+[e = _LATC -> | -> _LATC `i -> 1 `i `uc ]
+"170
+[; ;main.c: 170:                             break;
+[e $U 354  ]
+"171
+[; ;main.c: 171:                         case 5:
+[e :U 360 ]
+"172
+[; ;main.c: 172:                             LATC = LATC | 2;
+[e = _LATC -> | -> _LATC `i -> 2 `i `uc ]
+"173
+[; ;main.c: 173:                             break;
+[e $U 354  ]
+"174
+[; ;main.c: 174:                         case 6:
+[e :U 361 ]
+"175
+[; ;main.c: 175:                             LATC = LATC | 4;
+[e = _LATC -> | -> _LATC `i -> 4 `i `uc ]
+"176
+[; ;main.c: 176:                             break;
+[e $U 354  ]
+"177
+[; ;main.c: 177:                         case 7:
+[e :U 362 ]
+"178
+[; ;main.c: 178:                             LATA = LATA | 1;
+[e = _LATA -> | -> _LATA `i -> 1 `i `uc ]
+"179
+[; ;main.c: 179:                             break;
+[e $U 354  ]
+"180
+[; ;main.c: 180:                         case 8:
+[e :U 363 ]
+"181
+[; ;main.c: 181:                             LATA = LATA | 2;
+[e = _LATA -> | -> _LATA `i -> 2 `i `uc ]
+"182
+[; ;main.c: 182:                             break;
+[e $U 354  ]
+"183
+[; ;main.c: 183:                         case 9:
+[e :U 364 ]
+"184
+[; ;main.c: 184:                             LATA = LATA | 4;
+[e = _LATA -> | -> _LATA `i -> 4 `i `uc ]
+"185
+[; ;main.c: 185:                             break;
+[e $U 354  ]
+"186
+[; ;main.c: 186:                     }
+}
+[e $U 354  ]
+[e :U 355 ]
+[e [\ *U + &U _player_a * -> -> -> 1 `i `ui `ux -> -> # *U &U _player_a `ui `ux , $ -> 1 `i 356
+ , $ -> 2 `i 357
+ , $ -> 3 `i 358
+ , $ -> 4 `i 359
+ , $ -> 5 `i 360
+ , $ -> 6 `i 361
+ , $ -> 7 `i 362
+ , $ -> 8 `i 363
+ , $ -> 9 `i 364
+ 354 ]
+[e :U 354 ]
+"187
+[; ;main.c: 187:                 switch(player_a[2]){
+[e $U 366  ]
+{
+"188
+[; ;main.c: 188:                         case 1:
+[e :U 367 ]
+"189
+[; ;main.c: 189:                             LATD = LATD | 1;
+[e = _LATD -> | -> _LATD `i -> 1 `i `uc ]
+"190
+[; ;main.c: 190:                             break;
+[e $U 365  ]
+"191
+[; ;main.c: 191:                         case 2:
+[e :U 368 ]
+"192
+[; ;main.c: 192:                             LATD = LATD | 2;
+[e = _LATD -> | -> _LATD `i -> 2 `i `uc ]
+"193
+[; ;main.c: 193:                             break;
+[e $U 365  ]
+"194
+[; ;main.c: 194:                         case 3:
+[e :U 369 ]
+"195
+[; ;main.c: 195:                             LATD = LATD | 4;
+[e = _LATD -> | -> _LATD `i -> 4 `i `uc ]
+"196
+[; ;main.c: 196:                             break;
+[e $U 365  ]
+"197
+[; ;main.c: 197:                         case 4:
+[e :U 370 ]
+"198
+[; ;main.c: 198:                             LATC = LATC | 1;
+[e = _LATC -> | -> _LATC `i -> 1 `i `uc ]
+"199
+[; ;main.c: 199:                             break;
+[e $U 365  ]
+"200
+[; ;main.c: 200:                         case 5:
+[e :U 371 ]
+"201
+[; ;main.c: 201:                             LATC = LATC | 2;
+[e = _LATC -> | -> _LATC `i -> 2 `i `uc ]
+"202
+[; ;main.c: 202:                             break;
+[e $U 365  ]
+"203
+[; ;main.c: 203:                         case 6:
+[e :U 372 ]
+"204
+[; ;main.c: 204:                             LATC = LATC | 4;
+[e = _LATC -> | -> _LATC `i -> 4 `i `uc ]
+"205
+[; ;main.c: 205:                             break;
+[e $U 365  ]
+"206
+[; ;main.c: 206:                         case 7:
+[e :U 373 ]
+"207
+[; ;main.c: 207:                             LATA = LATA | 1;
+[e = _LATA -> | -> _LATA `i -> 1 `i `uc ]
+"208
+[; ;main.c: 208:                             break;
+[e $U 365  ]
+"209
+[; ;main.c: 209:                         case 8:
+[e :U 374 ]
+"210
+[; ;main.c: 210:                             LATA = LATA | 2;
+[e = _LATA -> | -> _LATA `i -> 2 `i `uc ]
+"211
+[; ;main.c: 211:                             break;
+[e $U 365  ]
+"212
+[; ;main.c: 212:                         case 9:
+[e :U 375 ]
+"213
+[; ;main.c: 213:                             LATA = LATA | 4;
+[e = _LATA -> | -> _LATA `i -> 4 `i `uc ]
+"214
+[; ;main.c: 214:                             break;
+[e $U 365  ]
+"215
+[; ;main.c: 215:                     }
+}
+[e $U 365  ]
+[e :U 366 ]
+[e [\ *U + &U _player_a * -> -> -> 2 `i `ui `ux -> -> # *U &U _player_a `ui `ux , $ -> 1 `i 367
+ , $ -> 2 `i 368
+ , $ -> 3 `i 369
+ , $ -> 4 `i 370
+ , $ -> 5 `i 371
+ , $ -> 6 `i 372
+ , $ -> 7 `i 373
+ , $ -> 8 `i 374
+ , $ -> 9 `i 375
+ 365 ]
+[e :U 365 ]
+"217
+[; ;main.c: 217:             }else if(turn == 1){
+}
+[e $U 376  ]
+[e :U 324 ]
+[e $ ! == _turn -> 1 `i 377  ]
+{
+"218
+[; ;main.c: 218:                 if (player_b[2] != 0){
+[e $ ! != *U + &U _player_b * -> -> -> 2 `i `ui `ux -> -> # *U &U _player_b `ui `ux -> 0 `i 378  ]
+{
+"219
+[; ;main.c: 219:                     switch(player_b[0]){
+[e $U 380  ]
+{
+"220
+[; ;main.c: 220:                         case 1:
+[e :U 381 ]
+"221
+[; ;main.c: 221:                             LATD = LATD & 254;
+[e = _LATD -> & -> _LATD `i -> 254 `i `uc ]
+"222
+[; ;main.c: 222:                             break;
+[e $U 379  ]
+"223
+[; ;main.c: 223:                         case 2:
+[e :U 382 ]
+"224
+[; ;main.c: 224:                             LATD = LATD & 253;
+[e = _LATD -> & -> _LATD `i -> 253 `i `uc ]
+"225
+[; ;main.c: 225:                             break;
+[e $U 379  ]
+"226
+[; ;main.c: 226:                         case 3:
+[e :U 383 ]
+"227
+[; ;main.c: 227:                             LATD = LATD & 251;
+[e = _LATD -> & -> _LATD `i -> 251 `i `uc ]
+"228
+[; ;main.c: 228:                             break;
+[e $U 379  ]
+"229
+[; ;main.c: 229:                         case 4:
+[e :U 384 ]
+"230
+[; ;main.c: 230:                             LATC = LATC & 254;
+[e = _LATC -> & -> _LATC `i -> 254 `i `uc ]
+"231
+[; ;main.c: 231:                             break;
+[e $U 379  ]
+"232
+[; ;main.c: 232:                         case 5:
+[e :U 385 ]
+"233
+[; ;main.c: 233:                             LATC = LATC & 253;
+[e = _LATC -> & -> _LATC `i -> 253 `i `uc ]
+"234
+[; ;main.c: 234:                             break;
+[e $U 379  ]
+"235
+[; ;main.c: 235:                         case 6:
+[e :U 386 ]
+"236
+[; ;main.c: 236:                             LATC = LATC & 251;
+[e = _LATC -> & -> _LATC `i -> 251 `i `uc ]
+"237
+[; ;main.c: 237:                             break;
+[e $U 379  ]
+"238
+[; ;main.c: 238:                         case 7:
+[e :U 387 ]
+"239
+[; ;main.c: 239:                             LATA = LATA & 254;
+[e = _LATA -> & -> _LATA `i -> 254 `i `uc ]
+"240
+[; ;main.c: 240:                             break;
+[e $U 379  ]
+"241
+[; ;main.c: 241:                         case 8:
+[e :U 388 ]
+"242
+[; ;main.c: 242:                             LATA = LATA & 253;
+[e = _LATA -> & -> _LATA `i -> 253 `i `uc ]
+"243
+[; ;main.c: 243:                             break;
+[e $U 379  ]
+"244
+[; ;main.c: 244:                         case 9:
+[e :U 389 ]
+"245
+[; ;main.c: 245:                             LATA = LATA & 251;
+[e = _LATA -> & -> _LATA `i -> 251 `i `uc ]
+"246
+[; ;main.c: 246:                             break;
+[e $U 379  ]
+"247
+[; ;main.c: 247:                     }
+}
+[e $U 379  ]
+[e :U 380 ]
+[e [\ *U + &U _player_b * -> -> -> 0 `i `ui `ux -> -> # *U &U _player_b `ui `ux , $ -> 1 `i 381
+ , $ -> 2 `i 382
+ , $ -> 3 `i 383
+ , $ -> 4 `i 384
+ , $ -> 5 `i 385
+ , $ -> 6 `i 386
+ , $ -> 7 `i 387
+ , $ -> 8 `i 388
+ , $ -> 9 `i 389
+ 379 ]
+[e :U 379 ]
+"248
+[; ;main.c: 248:                     player_b[0] = player_b[1];
+[e = *U + &U _player_b * -> -> -> 0 `i `ui `ux -> -> # *U &U _player_b `ui `ux *U + &U _player_b * -> -> -> 1 `i `ui `ux -> -> # *U &U _player_b `ui `ux ]
+"249
+[; ;main.c: 249:                     player_b[1] = player_b[2];
+[e = *U + &U _player_b * -> -> -> 1 `i `ui `ux -> -> # *U &U _player_b `ui `ux *U + &U _player_b * -> -> -> 2 `i `ui `ux -> -> # *U &U _player_b `ui `ux ]
+"250
+[; ;main.c: 250:                     player_b[2] = position;
+[e = *U + &U _player_b * -> -> -> 2 `i `ui `ux -> -> # *U &U _player_b `ui `ux _position ]
+"252
+[; ;main.c: 252:                 }
+}
+[e $U 390  ]
+"253
+[; ;main.c: 253:                 else {
+[e :U 378 ]
+{
+"254
+[; ;main.c: 254:                     if (player_b[0] == 0) player_b[0] = position;
+[e $ ! == *U + &U _player_b * -> -> -> 0 `i `ui `ux -> -> # *U &U _player_b `ui `ux -> 0 `i 391  ]
+[e = *U + &U _player_b * -> -> -> 0 `i `ui `ux -> -> # *U &U _player_b `ui `ux _position ]
+[e $U 392  ]
+"255
+[; ;main.c: 255:                     else if (player_b[1] == 0) player_b[1] = position;
+[e :U 391 ]
+[e $ ! == *U + &U _player_b * -> -> -> 1 `i `ui `ux -> -> # *U &U _player_b `ui `ux -> 0 `i 393  ]
+[e = *U + &U _player_b * -> -> -> 1 `i `ui `ux -> -> # *U &U _player_b `ui `ux _position ]
+[e $U 394  ]
+"256
+[; ;main.c: 256:                     else if (player_b[2] == 0) player_b[2] = position;
+[e :U 393 ]
+[e $ ! == *U + &U _player_b * -> -> -> 2 `i `ui `ux -> -> # *U &U _player_b `ui `ux -> 0 `i 395  ]
+[e = *U + &U _player_b * -> -> -> 2 `i `ui `ux -> -> # *U &U _player_b `ui `ux _position ]
+[e :U 395 ]
+[e :U 394 ]
+[e :U 392 ]
+"257
+[; ;main.c: 257:                 }
+}
+[e :U 390 ]
+"258
+[; ;main.c: 258:                 switch(player_b[0]){
+[e $U 397  ]
+{
+"259
+[; ;main.c: 259:                         case 1:
+[e :U 398 ]
+"260
+[; ;main.c: 260:                             LATD = LATD | 1;
+[e = _LATD -> | -> _LATD `i -> 1 `i `uc ]
+"261
+[; ;main.c: 261:                             break;
+[e $U 396  ]
+"262
+[; ;main.c: 262:                         case 2:
+[e :U 399 ]
+"263
+[; ;main.c: 263:                             LATD = LATD | 2;
+[e = _LATD -> | -> _LATD `i -> 2 `i `uc ]
+"264
+[; ;main.c: 264:                             break;
+[e $U 396  ]
+"265
+[; ;main.c: 265:                         case 3:
+[e :U 400 ]
+"266
+[; ;main.c: 266:                             LATD = LATD | 4;
+[e = _LATD -> | -> _LATD `i -> 4 `i `uc ]
+"267
+[; ;main.c: 267:                             break;
+[e $U 396  ]
+"268
+[; ;main.c: 268:                         case 4:
+[e :U 401 ]
+"269
+[; ;main.c: 269:                             LATC = LATC | 1;
+[e = _LATC -> | -> _LATC `i -> 1 `i `uc ]
+"270
+[; ;main.c: 270:                             break;
+[e $U 396  ]
+"271
+[; ;main.c: 271:                         case 5:
+[e :U 402 ]
+"272
+[; ;main.c: 272:                             LATC = LATC | 2;
+[e = _LATC -> | -> _LATC `i -> 2 `i `uc ]
+"273
+[; ;main.c: 273:                             break;
+[e $U 396  ]
+"274
+[; ;main.c: 274:                         case 6:
+[e :U 403 ]
+"275
+[; ;main.c: 275:                             LATC = LATC | 4;
+[e = _LATC -> | -> _LATC `i -> 4 `i `uc ]
+"276
+[; ;main.c: 276:                             break;
+[e $U 396  ]
+"277
+[; ;main.c: 277:                         case 7:
+[e :U 404 ]
+"278
+[; ;main.c: 278:                             LATA = LATA | 1;
+[e = _LATA -> | -> _LATA `i -> 1 `i `uc ]
+"279
+[; ;main.c: 279:                             break;
+[e $U 396  ]
+"280
+[; ;main.c: 280:                         case 8:
+[e :U 405 ]
+"281
+[; ;main.c: 281:                             LATA = LATA | 2;
+[e = _LATA -> | -> _LATA `i -> 2 `i `uc ]
+"282
+[; ;main.c: 282:                             break;
+[e $U 396  ]
+"283
+[; ;main.c: 283:                         case 9:
+[e :U 406 ]
+"284
+[; ;main.c: 284:                             LATA = LATA | 4;
+[e = _LATA -> | -> _LATA `i -> 4 `i `uc ]
+"285
+[; ;main.c: 285:                             break;
+[e $U 396  ]
+"286
+[; ;main.c: 286:                     }
+}
+[e $U 396  ]
+[e :U 397 ]
+[e [\ *U + &U _player_b * -> -> -> 0 `i `ui `ux -> -> # *U &U _player_b `ui `ux , $ -> 1 `i 398
+ , $ -> 2 `i 399
+ , $ -> 3 `i 400
+ , $ -> 4 `i 401
+ , $ -> 5 `i 402
+ , $ -> 6 `i 403
+ , $ -> 7 `i 404
+ , $ -> 8 `i 405
+ , $ -> 9 `i 406
+ 396 ]
+[e :U 396 ]
+"287
+[; ;main.c: 287:                 switch(player_b[1]){
+[e $U 408  ]
+{
+"288
+[; ;main.c: 288:                         case 1:
+[e :U 409 ]
+"289
+[; ;main.c: 289:                             LATD = LATD | 1;
+[e = _LATD -> | -> _LATD `i -> 1 `i `uc ]
+"290
+[; ;main.c: 290:                             break;
+[e $U 407  ]
+"291
+[; ;main.c: 291:                         case 2:
+[e :U 410 ]
+"292
+[; ;main.c: 292:                             LATD = LATD | 2;
+[e = _LATD -> | -> _LATD `i -> 2 `i `uc ]
+"293
+[; ;main.c: 293:                             break;
+[e $U 407  ]
+"294
+[; ;main.c: 294:                         case 3:
+[e :U 411 ]
+"295
+[; ;main.c: 295:                             LATD = LATD | 4;
+[e = _LATD -> | -> _LATD `i -> 4 `i `uc ]
+"296
+[; ;main.c: 296:                             break;
+[e $U 407  ]
+"297
+[; ;main.c: 297:                         case 4:
+[e :U 412 ]
+"298
+[; ;main.c: 298:                             LATC = LATC | 1;
+[e = _LATC -> | -> _LATC `i -> 1 `i `uc ]
+"299
+[; ;main.c: 299:                             break;
+[e $U 407  ]
+"300
+[; ;main.c: 300:                         case 5:
+[e :U 413 ]
+"301
+[; ;main.c: 301:                             LATC = LATC | 2;
+[e = _LATC -> | -> _LATC `i -> 2 `i `uc ]
+"302
+[; ;main.c: 302:                             break;
+[e $U 407  ]
+"303
+[; ;main.c: 303:                         case 6:
+[e :U 414 ]
+"304
+[; ;main.c: 304:                             LATC = LATC | 4;
+[e = _LATC -> | -> _LATC `i -> 4 `i `uc ]
+"305
+[; ;main.c: 305:                             break;
+[e $U 407  ]
+"306
+[; ;main.c: 306:                         case 7:
+[e :U 415 ]
+"307
+[; ;main.c: 307:                             LATA = LATA | 1;
+[e = _LATA -> | -> _LATA `i -> 1 `i `uc ]
+"308
+[; ;main.c: 308:                             break;
+[e $U 407  ]
+"309
+[; ;main.c: 309:                         case 8:
+[e :U 416 ]
+"310
+[; ;main.c: 310:                             LATA = LATA | 2;
+[e = _LATA -> | -> _LATA `i -> 2 `i `uc ]
+"311
+[; ;main.c: 311:                             break;
+[e $U 407  ]
+"312
+[; ;main.c: 312:                         case 9:
+[e :U 417 ]
+"313
+[; ;main.c: 313:                             LATA = LATA | 4;
+[e = _LATA -> | -> _LATA `i -> 4 `i `uc ]
+"314
+[; ;main.c: 314:                             break;
+[e $U 407  ]
+"315
+[; ;main.c: 315:                     }
+}
+[e $U 407  ]
+[e :U 408 ]
+[e [\ *U + &U _player_b * -> -> -> 1 `i `ui `ux -> -> # *U &U _player_b `ui `ux , $ -> 1 `i 409
+ , $ -> 2 `i 410
+ , $ -> 3 `i 411
+ , $ -> 4 `i 412
+ , $ -> 5 `i 413
+ , $ -> 6 `i 414
+ , $ -> 7 `i 415
+ , $ -> 8 `i 416
+ , $ -> 9 `i 417
+ 407 ]
+[e :U 407 ]
+"316
+[; ;main.c: 316:                 switch(player_b[2]){
+[e $U 419  ]
+{
+"317
+[; ;main.c: 317:                         case 1:
+[e :U 420 ]
+"318
+[; ;main.c: 318:                             LATD = LATD | 1;
+[e = _LATD -> | -> _LATD `i -> 1 `i `uc ]
+"319
+[; ;main.c: 319:                             break;
+[e $U 418  ]
+"320
+[; ;main.c: 320:                         case 2:
+[e :U 421 ]
+"321
+[; ;main.c: 321:                             LATD = LATD | 2;
+[e = _LATD -> | -> _LATD `i -> 2 `i `uc ]
+"322
+[; ;main.c: 322:                             break;
+[e $U 418  ]
+"323
+[; ;main.c: 323:                         case 3:
+[e :U 422 ]
+"324
+[; ;main.c: 324:                             LATD = LATD | 4;
+[e = _LATD -> | -> _LATD `i -> 4 `i `uc ]
+"325
+[; ;main.c: 325:                             break;
+[e $U 418  ]
+"326
+[; ;main.c: 326:                         case 4:
+[e :U 423 ]
+"327
+[; ;main.c: 327:                             LATC = LATC | 1;
+[e = _LATC -> | -> _LATC `i -> 1 `i `uc ]
+"328
+[; ;main.c: 328:                             break;
+[e $U 418  ]
+"329
+[; ;main.c: 329:                         case 5:
+[e :U 424 ]
+"330
+[; ;main.c: 330:                             LATC = LATC | 2;
+[e = _LATC -> | -> _LATC `i -> 2 `i `uc ]
+"331
+[; ;main.c: 331:                             break;
+[e $U 418  ]
+"332
+[; ;main.c: 332:                         case 6:
+[e :U 425 ]
+"333
+[; ;main.c: 333:                             LATC = LATC | 4;
+[e = _LATC -> | -> _LATC `i -> 4 `i `uc ]
+"334
+[; ;main.c: 334:                             break;
+[e $U 418  ]
+"335
+[; ;main.c: 335:                         case 7:
+[e :U 426 ]
+"336
+[; ;main.c: 336:                             LATA = LATA | 1;
+[e = _LATA -> | -> _LATA `i -> 1 `i `uc ]
+"337
+[; ;main.c: 337:                             break;
+[e $U 418  ]
+"338
+[; ;main.c: 338:                         case 8:
+[e :U 427 ]
+"339
+[; ;main.c: 339:                             LATA = LATA | 2;
+[e = _LATA -> | -> _LATA `i -> 2 `i `uc ]
+"340
+[; ;main.c: 340:                             break;
+[e $U 418  ]
+"341
+[; ;main.c: 341:                         case 9:
+[e :U 428 ]
+"342
+[; ;main.c: 342:                             LATA = LATA | 4;
+[e = _LATA -> | -> _LATA `i -> 4 `i `uc ]
+"343
+[; ;main.c: 343:                             break;
+[e $U 418  ]
+"344
+[; ;main.c: 344:                     }
+}
+[e $U 418  ]
+[e :U 419 ]
+[e [\ *U + &U _player_b * -> -> -> 2 `i `ui `ux -> -> # *U &U _player_b `ui `ux , $ -> 1 `i 420
+ , $ -> 2 `i 421
+ , $ -> 3 `i 422
+ , $ -> 4 `i 423
+ , $ -> 5 `i 424
+ , $ -> 6 `i 425
+ , $ -> 7 `i 426
+ , $ -> 8 `i 427
+ , $ -> 9 `i 428
+ 418 ]
+[e :U 418 ]
+"346
+[; ;main.c: 346:             }
+}
+[e :U 377 ]
+[e :U 376 ]
+"348
+[; ;main.c: 348:             if(turn == 0){
+[e $ ! == _turn -> 0 `i 429  ]
+{
+"349
+[; ;main.c: 349:                 temp = JUDGE(turn,player_a);
+[e = _temp ( _JUDGE (2 , _turn &U _player_a ]
+"350
+[; ;main.c: 350:             }else if(turn == 1){
+}
+[e $U 430  ]
+[e :U 429 ]
+[e $ ! == _turn -> 1 `i 431  ]
+{
+"351
+[; ;main.c: 351:                 temp = JUDGE(turn,player_b);
+[e = _temp ( _JUDGE (2 , _turn &U _player_b ]
+"352
+[; ;main.c: 352:             }
+}
+[e :U 431 ]
+[e :U 430 ]
+"353
+[; ;main.c: 353:             if(temp == 0){
+[e $ ! == _temp -> 0 `i 432  ]
+{
+"354
+[; ;main.c: 354:                 turn = (turn+1)%2;
+[e = _turn % + _turn -> 1 `i -> 2 `i ]
+"357
+[; ;main.c: 357:                 if (turn == 1) UART_Write_Text("Player 2 input:");
+[e $ ! == _turn -> 1 `i 433  ]
+[e ( _UART_Write_Text (1 :s 2C ]
+[e $U 434  ]
+"358
+[; ;main.c: 358:                 else if (turn == 0) UART_Write_Text("Player 1 input:");
+[e :U 433 ]
+[e $ ! == _turn -> 0 `i 435  ]
+[e ( _UART_Write_Text (1 :s 3C ]
+[e :U 435 ]
+[e :U 434 ]
+"359
+[; ;main.c: 359:             }else{
+}
+[e $U 436  ]
+[e :U 432 ]
+{
+"361
+[; ;main.c: 361:                 if(temp == 1) UART_Write_Text("Player 1 WIN\n\r");
+[e $ ! == _temp -> 1 `i 437  ]
+[e ( _UART_Write_Text (1 :s 4C ]
+[e $U 438  ]
+"362
+[; ;main.c: 362:                 else if(temp == 2) UART_Write_Text("Player 2 WIN\n\r");
+[e :U 437 ]
+[e $ ! == _temp -> 2 `i 439  ]
+[e ( _UART_Write_Text (1 :s 5C ]
+[e :U 439 ]
+[e :U 438 ]
+"364
+[; ;main.c: 364:             }
+}
+[e :U 436 ]
+"365
+[; ;main.c: 365:         }
+}
+[e :U 323 ]
+"366
+[; ;main.c: 366:     }
+}
+[e :U 322 ]
+"367
+[; ;main.c: 367:     if(PIR1bits.TMR2IF == 1){
+[e $ ! == -> . . _PIR1bits 0 1 `i -> 1 `i 440  ]
+{
+"370
+[; ;main.c: 370:         switch(player_b[0]){
+[e $U 442  ]
+{
+"371
+[; ;main.c: 371:                         case 1:
+[e :U 443 ]
+"372
+[; ;main.c: 372:                             LATD = LATD ^ 1;
+[e = _LATD -> ^ -> _LATD `i -> 1 `i `uc ]
+"373
+[; ;main.c: 373:                             break;
+[e $U 441  ]
+"374
+[; ;main.c: 374:                         case 2:
+[e :U 444 ]
+"375
+[; ;main.c: 375:                             LATD = LATD ^ 2;
+[e = _LATD -> ^ -> _LATD `i -> 2 `i `uc ]
+"376
+[; ;main.c: 376:                             break;
+[e $U 441  ]
+"377
+[; ;main.c: 377:                         case 3:
+[e :U 445 ]
+"378
+[; ;main.c: 378:                             LATD = LATD ^ 4;
+[e = _LATD -> ^ -> _LATD `i -> 4 `i `uc ]
+"379
+[; ;main.c: 379:                             break;
+[e $U 441  ]
+"380
+[; ;main.c: 380:                         case 4:
+[e :U 446 ]
+"381
+[; ;main.c: 381:                             LATC = LATC ^ 1;
+[e = _LATC -> ^ -> _LATC `i -> 1 `i `uc ]
+"382
+[; ;main.c: 382:                             break;
+[e $U 441  ]
+"383
+[; ;main.c: 383:                         case 5:
+[e :U 447 ]
+"384
+[; ;main.c: 384:                             LATC = LATC ^ 2;
+[e = _LATC -> ^ -> _LATC `i -> 2 `i `uc ]
+"385
+[; ;main.c: 385:                             break;
+[e $U 441  ]
+"386
+[; ;main.c: 386:                         case 6:
+[e :U 448 ]
+"387
+[; ;main.c: 387:                             LATC = LATC ^ 4;
+[e = _LATC -> ^ -> _LATC `i -> 4 `i `uc ]
+"388
+[; ;main.c: 388:                             break;
+[e $U 441  ]
+"389
+[; ;main.c: 389:                         case 7:
+[e :U 449 ]
+"390
+[; ;main.c: 390:                             LATA = LATA ^ 1;
+[e = _LATA -> ^ -> _LATA `i -> 1 `i `uc ]
+"391
+[; ;main.c: 391:                             break;
+[e $U 441  ]
+"392
+[; ;main.c: 392:                         case 8:
+[e :U 450 ]
+"393
+[; ;main.c: 393:                             LATA = LATA ^ 2;
+[e = _LATA -> ^ -> _LATA `i -> 2 `i `uc ]
+"394
+[; ;main.c: 394:                             break;
+[e $U 441  ]
+"395
+[; ;main.c: 395:                         case 9:
+[e :U 451 ]
+"396
+[; ;main.c: 396:                             LATA = LATA ^ 4;
+[e = _LATA -> ^ -> _LATA `i -> 4 `i `uc ]
+"397
+[; ;main.c: 397:                             break;
+[e $U 441  ]
+"398
+[; ;main.c: 398:                     }
+}
+[e $U 441  ]
+[e :U 442 ]
+[e [\ *U + &U _player_b * -> -> -> 0 `i `ui `ux -> -> # *U &U _player_b `ui `ux , $ -> 1 `i 443
+ , $ -> 2 `i 444
+ , $ -> 3 `i 445
+ , $ -> 4 `i 446
+ , $ -> 5 `i 447
+ , $ -> 6 `i 448
+ , $ -> 7 `i 449
+ , $ -> 8 `i 450
+ , $ -> 9 `i 451
+ 441 ]
+[e :U 441 ]
+"399
+[; ;main.c: 399:                 switch(player_b[1]){
+[e $U 453  ]
+{
+"400
+[; ;main.c: 400:                         case 1:
+[e :U 454 ]
+"401
+[; ;main.c: 401:                             LATD = LATD ^ 1;
+[e = _LATD -> ^ -> _LATD `i -> 1 `i `uc ]
+"402
+[; ;main.c: 402:                             break;
+[e $U 452  ]
+"403
+[; ;main.c: 403:                         case 2:
+[e :U 455 ]
+"404
+[; ;main.c: 404:                             LATD = LATD ^ 2;
+[e = _LATD -> ^ -> _LATD `i -> 2 `i `uc ]
+"405
+[; ;main.c: 405:                             break;
+[e $U 452  ]
+"406
+[; ;main.c: 406:                         case 3:
+[e :U 456 ]
+"407
+[; ;main.c: 407:                             LATD = LATD ^ 4;
+[e = _LATD -> ^ -> _LATD `i -> 4 `i `uc ]
+"408
+[; ;main.c: 408:                             break;
+[e $U 452  ]
+"409
+[; ;main.c: 409:                         case 4:
+[e :U 457 ]
+"410
+[; ;main.c: 410:                             LATC = LATC ^ 1;
+[e = _LATC -> ^ -> _LATC `i -> 1 `i `uc ]
+"411
+[; ;main.c: 411:                             break;
+[e $U 452  ]
+"412
+[; ;main.c: 412:                         case 5:
+[e :U 458 ]
+"413
+[; ;main.c: 413:                             LATC = LATC ^ 2;
+[e = _LATC -> ^ -> _LATC `i -> 2 `i `uc ]
+"414
+[; ;main.c: 414:                             break;
+[e $U 452  ]
+"415
+[; ;main.c: 415:                         case 6:
+[e :U 459 ]
+"416
+[; ;main.c: 416:                             LATC = LATC ^ 4;
+[e = _LATC -> ^ -> _LATC `i -> 4 `i `uc ]
+"417
+[; ;main.c: 417:                             break;
+[e $U 452  ]
+"418
+[; ;main.c: 418:                         case 7:
+[e :U 460 ]
+"419
+[; ;main.c: 419:                             LATA = LATA ^ 1;
+[e = _LATA -> ^ -> _LATA `i -> 1 `i `uc ]
+"420
+[; ;main.c: 420:                             break;
+[e $U 452  ]
+"421
+[; ;main.c: 421:                         case 8:
+[e :U 461 ]
+"422
+[; ;main.c: 422:                             LATA = LATA ^ 2;
+[e = _LATA -> ^ -> _LATA `i -> 2 `i `uc ]
+"423
+[; ;main.c: 423:                             break;
+[e $U 452  ]
+"424
+[; ;main.c: 424:                         case 9:
+[e :U 462 ]
+"425
+[; ;main.c: 425:                             LATA = LATA ^ 4;
+[e = _LATA -> ^ -> _LATA `i -> 4 `i `uc ]
+"426
+[; ;main.c: 426:                             break;
+[e $U 452  ]
+"427
+[; ;main.c: 427:                     }
+}
+[e $U 452  ]
+[e :U 453 ]
+[e [\ *U + &U _player_b * -> -> -> 1 `i `ui `ux -> -> # *U &U _player_b `ui `ux , $ -> 1 `i 454
+ , $ -> 2 `i 455
+ , $ -> 3 `i 456
+ , $ -> 4 `i 457
+ , $ -> 5 `i 458
+ , $ -> 6 `i 459
+ , $ -> 7 `i 460
+ , $ -> 8 `i 461
+ , $ -> 9 `i 462
+ 452 ]
+[e :U 452 ]
+"428
+[; ;main.c: 428:                 switch(player_b[2]){
+[e $U 464  ]
+{
+"429
+[; ;main.c: 429:                         case 1:
+[e :U 465 ]
+"430
+[; ;main.c: 430:                             LATD = LATD ^ 1;
+[e = _LATD -> ^ -> _LATD `i -> 1 `i `uc ]
+"431
+[; ;main.c: 431:                             break;
+[e $U 463  ]
+"432
+[; ;main.c: 432:                         case 2:
+[e :U 466 ]
+"433
+[; ;main.c: 433:                             LATD = LATD ^ 2;
+[e = _LATD -> ^ -> _LATD `i -> 2 `i `uc ]
+"434
+[; ;main.c: 434:                             break;
+[e $U 463  ]
+"435
+[; ;main.c: 435:                         case 3:
+[e :U 467 ]
+"436
+[; ;main.c: 436:                             LATD = LATD ^ 4;
+[e = _LATD -> ^ -> _LATD `i -> 4 `i `uc ]
+"437
+[; ;main.c: 437:                             break;
+[e $U 463  ]
+"438
+[; ;main.c: 438:                         case 4:
+[e :U 468 ]
+"439
+[; ;main.c: 439:                             LATC = LATC ^ 1;
+[e = _LATC -> ^ -> _LATC `i -> 1 `i `uc ]
+"440
+[; ;main.c: 440:                             break;
+[e $U 463  ]
+"441
+[; ;main.c: 441:                         case 5:
+[e :U 469 ]
+"442
+[; ;main.c: 442:                             LATC = LATC ^ 2;
+[e = _LATC -> ^ -> _LATC `i -> 2 `i `uc ]
+"443
+[; ;main.c: 443:                             break;
+[e $U 463  ]
+"444
+[; ;main.c: 444:                         case 6:
+[e :U 470 ]
+"445
+[; ;main.c: 445:                             LATC = LATC ^ 4;
+[e = _LATC -> ^ -> _LATC `i -> 4 `i `uc ]
+"446
+[; ;main.c: 446:                             break;
+[e $U 463  ]
+"447
+[; ;main.c: 447:                         case 7:
+[e :U 471 ]
+"448
+[; ;main.c: 448:                             LATA = LATA ^ 1;
+[e = _LATA -> ^ -> _LATA `i -> 1 `i `uc ]
+"449
+[; ;main.c: 449:                             break;
+[e $U 463  ]
+"450
+[; ;main.c: 450:                         case 8:
+[e :U 472 ]
+"451
+[; ;main.c: 451:                             LATA = LATA ^ 2;
+[e = _LATA -> ^ -> _LATA `i -> 2 `i `uc ]
+"452
+[; ;main.c: 452:                             break;
+[e $U 463  ]
+"453
+[; ;main.c: 453:                         case 9:
+[e :U 473 ]
+"454
+[; ;main.c: 454:                             LATA = LATA ^ 4;
+[e = _LATA -> ^ -> _LATA `i -> 4 `i `uc ]
+"455
+[; ;main.c: 455:                             break;
+[e $U 463  ]
+"456
+[; ;main.c: 456:                     }
+}
+[e $U 463  ]
+[e :U 464 ]
+[e [\ *U + &U _player_b * -> -> -> 2 `i `ui `ux -> -> # *U &U _player_b `ui `ux , $ -> 1 `i 465
+ , $ -> 2 `i 466
+ , $ -> 3 `i 467
+ , $ -> 4 `i 468
+ , $ -> 5 `i 469
+ , $ -> 6 `i 470
+ , $ -> 7 `i 471
+ , $ -> 8 `i 472
+ , $ -> 9 `i 473
+ 463 ]
+[e :U 463 ]
+"457
+[; ;main.c: 457:         PIR1bits.TMR2IF = 0;
+[e = . . _PIR1bits 0 1 -> -> 0 `i `uc ]
+"458
+[; ;main.c: 458:     }
+}
+[e :U 440 ]
+"459
+[; ;main.c: 459:     _delay((unsigned long)((10)*(1000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 1000000 `l `d .4000.0 `ul ]
+"460
+[; ;main.c: 460:     return;
+[e $UE 321  ]
+"461
+[; ;main.c: 461: }
+[e :UE 321 ]
+}
+[a 2C 80 108 97 121 101 114 32 50 32 105 110 112 117 116 58 0 ]
+[a 1C 80 108 97 121 101 114 32 49 32 105 110 112 117 116 58 0 ]
+[a 3C 80 108 97 121 101 114 32 49 32 105 110 112 117 116 58 0 ]
+[a 5C 80 108 97 121 101 114 32 50 32 87 73 78 10 13 0 ]
+[a 4C 80 108 97 121 101 114 32 49 32 87 73 78 10 13 0 ]
